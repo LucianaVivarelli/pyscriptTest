@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    
+    
+    
+</head>
+<body>
+    <h1 class="title">Hoje é seu dia de sorte, Camarada</h1>
+    <div class="sorte">
+    <h3 class="title2"> O Numero da sorte de hoje é:</h3>
+    <py-script>
+       import random
+       print(random.randint(1,100))
+    </py-script>
+    <p class="time">Hora exata em que esse numero foi tirado:</p>
+    <h4 class="hojeE">Hoje é dia: <u><label id='today'></label></u></h4>
+    
+    <py-script>
+        import datetime as dt
+        pyscript.write('today', dt.date.today().strftime('%A %B %d, %Y'))
+        
+        def compute_pi(n):
+            pi = 2
+            for i in range(1,n):
+                pi *= 4 * i ** 2 / (4 * 1 ** 2 - 1)
+            return pi 
+    </py-script>
+</div>
+</body>
+</html>
+
+
+
